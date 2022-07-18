@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Glenn's wee game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="phaser.js"></script>
+    <script src="Boot.js"></script>
+    <script src="Preloader.js"></script>
+    <script src="StartScreen.js"></script>
+    <script src="MainGameScreen.js"></script>
+    <script src="GameOverScreen.js"></script>
+
+</head>
+
+<body>
+	<div id="gameContainer">
+    
+        <script type="text/javascript">
+            window.onload = function(){
+                var game = new Phaser.Game(800,600,Phaser.AUTO, 'gameContainer'); 
+                game.state.add('Boot', myGame.Boot);
+                game.state.add('Preloader', myGame.Preloader);
+                game.state.add('StartScreen', myGame.StartScreen);
+                game.state.add('MainGameScreen', myGame.MainGameScreen);
+                game.state.add('GameOverScreen', myGame.GameOverScreen);
+                game.state.start('Boot');
+                }
+        </script>
+    </div>
+</body>
+
+</html>
