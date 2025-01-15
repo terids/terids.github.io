@@ -22,6 +22,30 @@ a:hover
 	color: #009BFF;
 }
 
+/* start tables */
+table
+{
+	width: 80%;
+}
+
+th, tr, td
+{
+	/* border: 1px dashed #222222; */
+	padding: 5px;
+}
+
+#col1
+{
+	width: 15%;
+}
+
+#col2
+{
+	width: 85%;
+}
+
+/* end tales */
+
 /* start h2 */
 h2
 	{
